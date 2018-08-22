@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .box{
+            position:relative;
+        }
+        .d1,.d2{
+            position:absolute;
+            left:0;
+            top:30px;
+        }
+        .d1{
+           z-index:2;
+        }
+        .d2 {
+            z-index:3;
+        }
+        .s1:hover .d1{
+            z-index:5;
+        }
+        .s2:hover .d1{
+            z-index: 6;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+<span class="s1">公告<span>1</span>
+<div class="d1" style="width:50px;height:50px;background:yellow;">???</div>
+</span>
+    <span class="s2" >活动
+    <div class="d2" style="width:50px;height:50px;background:red;">65656</div>
+        </span>
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
